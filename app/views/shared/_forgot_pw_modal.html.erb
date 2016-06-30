@@ -1,0 +1,47 @@
+<div class="modal-outer">
+  <div class="modal-topbar">
+    <div class="modal-topbar-logo">
+      <%= image_tag ('door_champion_mark_w.svg'), :class => 'modal_brand' %>
+    </div>
+
+    <div class="close-modal">
+      <i class="fa fa-close"></i>
+    </div>
+
+  </div>
+  <div class="modal-inner">
+    <h3>
+      Forgot Password?
+    </h3>
+    <p>Enter your email to reset your password below</p>
+    <br>
+      <%= simple_form_for @user, url: user_password_path(@user) do |f| %>
+      <%= f.error_notification %>
+          <div class="input-group input-group-lg">
+        <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope-o"></i></span>
+        <%= f.input :email, as: :email, label: false, placeholder: "Email", :autofocus => true, class: "form-control login-field" %>
+    </div>
+
+    <div class="sent-success sent-outer">
+      <h4>Great!</h4>
+      <p> Check your email for the reset password link!</p>
+    </div>
+
+    <div class="sent-error sent-outer">
+      <h4>Oops!</h4>
+      <p>Looks like that email isn't associated with us.</p>
+    </div>
+
+
+    <br>
+    <div class="forgot-pw_submit">
+      <%= f.button :submit, "Submit", class: "btn btn-primary btn-lg", id: "pw_submit" %>
+      <% end %>
+    </div>
+    <br>
+  </div>
+</div>
+
+
+<div class="modal-overlay">
+</div>

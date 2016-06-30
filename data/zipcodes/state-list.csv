@@ -1,0 +1,63 @@
+StateAbbr,StateName,Country,FIPS
+"AA","Armed Forces Americas, except Canada","USA",00
+"AE","Armed Forces Europe, the Middle East, & Canada","USA",00
+"AK","Alaska","USA",02
+"AL","Alabama","USA",01
+"AP","Armed Forces Pacific","USA",00
+"AR","Arkansas","USA",05
+"AS","American Samoa","USA",60
+"AZ","Arizona","USA",04
+"CA","California","USA",06
+"CO","Colorado","USA",08
+"CT","Connecticut","USA",09
+"DC","District of Columbia","USA",11
+"DE","Delaware","USA",10
+"FL","Florida","USA",12
+"FM","Federated States of Micronesia","USA",64
+"GA","Georgia","USA",13
+"GU","Guam","USA",66
+"HI","Hawaii","USA",15
+"IA","Iowa","USA",19
+"ID","Idaho","USA",16
+"IL","Illinois","USA",17
+"IN","Indiana","USA",18
+"KS","Kansas","USA",20
+"KY","Kentucky","USA",21
+"LA","Louisiana","USA",22
+"MA","Massachusetts","USA",25
+"MD","Maryland","USA",24
+"ME","Maine","USA",23
+"MH","Marshall Islands","USA",68
+"MI","Michigan","USA",26
+"MN","Minnesota","USA",27
+"MO","Missouri","USA",29
+"MP","Northern Mariana Islands","USA",69
+"MS","Mississippi","USA",28
+"MT","Montana","USA",30
+"NC","North Carolina","USA",37
+"ND","North Dakota","USA",38
+"NE","Nebraska","USA",31
+"NH","New Hampshire","USA",33
+"NJ","New Jersey","USA",34
+"NM","New Mexico","USA",35
+"NV","Nevada","USA",32
+"NY","New York","USA",36
+"OH","Ohio","USA",39
+"OK","Oklahoma","USA",40
+"OR","Oregon","USA",41
+"PA","Pennsylvania","USA",42
+"PR","Puerto Rico","USA",72
+"PW","Palau","USA",70
+"RI","Rhode Island","USA",44
+"SC","South Carolina","USA",45
+"SD","South Dakota","USA",46
+"TN","Tennessee","USA",47
+"TX","Texas","USA",48
+"UT","Utah","USA",49
+"VA","Virginia","USA",51
+"VI","U.S. Virgin Islands","USA",78
+"VT","Vermont","USA",50
+"WA","Washington","USA",53
+"WI","Wisconsin","USA",55
+"WV","West Virginia","USA",54
+"WY","Wyoming","USA",56

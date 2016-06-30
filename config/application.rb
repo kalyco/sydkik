@@ -24,5 +24,17 @@ module Sydkik
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    config.i18n.load_path += Dir[Rails.root.join("config", "locales", "**", "*.{rb,yml}")]
+
+    config.paths.add File.join("app", "api"), glob: File.join("**", "*.rb")
+    config.autoload_paths += Dir[Rails.root.join("app", "api", "*")]
+    config.autoload_paths += Dir["lib"]
+
+    config.autoload_paths << Rails.root.join("serializers")
+
+    # rubocop: disable Style/RedundantSelf
+    config.exceptions_app = self.routes
+    # rubocop: enable Style/RedundantSelf
   end
 end
