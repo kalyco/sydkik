@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   attr_accessor :current_password
 
-  enum type: %w(sydkikee sydkiker)
+  enum type: %w(sydkikee sydkikr)
 
   before_save { self.email = email.downcase }
   before_save { self.distributed_email = distributed_email.downcase if distributed_email }

@@ -1,0 +1,33 @@
+<div class="wrapper">
+  <div class="app-header-text">
+    <h1>
+      <%= t(".header") %>
+    </h1>
+  </div>
+
+  <!--login container-->
+  <div class="hero-login-wrap">
+    <%= simple_form_for :user, url: user_session_path do |f| %>
+      <div class="inputs">
+        <%= f.input :email, required: true,
+                    autofocus: true,
+                    placeholder: t("email_placeholder"),
+                    label: false,
+                    input_html:  { class: "hero-login-input", value: session[:email_recipient_address] } %>
+        <%= f.input :password,
+                    required: true,
+                    input_html: {class: "hero-login-input"},
+                    placeholder: t("password"),
+                    label: false %>
+        <%#= f.input :remember_me, as: :boolean,
+                      label: false,
+                      inline_label: true if devise_mapping.rememberable? %>
+        <% if devise_mapping.recoverable? %>
+          <%= link_to t(".forgot_password"), new_password_path(:user), class: "forgot-pass" %>
+        <% end %>
+      </div>
+
+      <%= f.button :submit, t("log_in"), class: "hero-login-submit" %>
+    <% end %>
+  </div>
+</div>

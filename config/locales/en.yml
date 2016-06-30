@@ -20,4 +20,25 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  static_pages:
+    privacy:
+      description: "%{brand} Privacy Policy"
+
+    terms:
+      description: "%{brand} Terms and Conditions"
+
+    support:
+      description: "%{brand} Support"
+
+    index:
+
+  user:
+    shared:
+      login:
+        i_am_sydkikee: "I am a sydkik"
+			  i_am_sydkikr: "I am looking for a sydkik"
+			login_inputs: 
+				header: "Find Your Net Sydkik"
+				email_placeholder: "Email"
+				password: "Password"
+				forgot_password: "Forgot Password?"

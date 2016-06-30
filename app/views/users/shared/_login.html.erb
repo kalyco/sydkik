@@ -1,0 +1,46 @@
+<div class="hero_wrapper login-hero-media">
+  <div class="hero-overlay">
+    <%= render "users/shared/topbar", show_login: false %>
+
+    <%= render "users/shared/login_inputs" %>
+
+    <div class="clearfix">
+      <p class="app-header-alt"><%= t(".or") %></p>
+    </div>
+
+    <%= link_to user_facebook_omniauth_authorize_path do %>
+      <div class="facebook-wrapper">
+        <div class="facebook-action">
+          <div class="fb-logo">
+            <i class="fa fa-2x fa-facebook"></i>
+          </div>
+        <div class="fb-content">
+          Log in with Facebook
+        </div>
+      </div>
+    </div>
+      <% end %>
+  </div>
+</div>
+
+<!-- starts the lower button -->
+
+<div class="wrapper create-account-cta">
+  <h2 class="brand-blue">
+    <%= t(".no_account") %>
+  </h2>
+  <p class="brand-blue">
+    <%= t(".cta").html_safe %>
+  </p>
+  <br>
+  <div class="renter-cta">
+    <%= link_to t("i_am_sydkikee"),
+               new_user_registration_path,
+               { class: "renter-btn cta-btn", id: "sign-up-sydkikee", role: "button" } %>
+  </div>
+  <div class="manager-cta">
+    <%= link_to t("i_am_sydkikr"),
+                new_user_registration_path(status: "sydkikr"),
+                { class: "manager-btn cta-btn", id: "sign-up-sydkikr", role: "button" } %>
+  </div>
+</div>
